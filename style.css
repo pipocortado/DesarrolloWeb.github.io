@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #0a141d;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+header {
+  width: 100%;
+  background: rgb(15, 7, 6);
+  padding: 0 20px ;
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+
+.menu-toggle {
+  display: none;
+  margin-left: auto;
+  color: aliceblue;
+  line-height: 60px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.logo a {
+  width: 100%;
+  height: auto;
+  color: aquamarine;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#menu {
+  margin-left: auto;
+}
+
+#menu ul li {
+  display: inline-block;
+}
+
+#menu ul li a {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  text-decoration: none;
+  line-height: 60px;
+  padding: 0 8px;
+  text-transform: uppercase;
+  transition: .2s;
+}
+
+#menu ul li a:hover {
+  background: #f3f3;
+}
+
+.show {
+  height: 320px !important;
+}
+
+@media screen and (max-width:700px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #menu {
+    background: rgb(15, 7, 6);
+    position: absolute;
+    z-index: 10;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border: 1px solid #fff;
+    overflow: hidden;
+    transition: .3s ease-out;
+  }
+
+  #menu ul li {
+    display: block;
+    text-align: center;
+  }
+
+  #menu ul li a{
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+  }
+
+  #menu ul li a:hover {
+    background: #f3f3;
+  }
+}
+
+#datos-personales {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 7px rgb(187, 198, 214);
+    border-radius: 10px;
+}
+
+#datos-personales h2 {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, rgb(0, 49, 148), rgb(0, 179, 255));
+  margin-top: 0;
+  margin: 40px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: aliceblue;
+  padding: 5px;
+  box-shadow: 0px 2px 5px gray;
+}
+
+#datos-personales ul li {
+  display: block;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+#datos-academicos {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  margin-top: 40px;
+  padding: 10px;
+  box-shadow: 2px 2px 7px rgb(187, 198, 214);
+  border-radius: 10px;
+}
+
+#datos-academicos h2 {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, rgb(0, 49, 148), rgb(0, 179, 255));
+  margin-top: 0;
+  margin: 60px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: aliceblue;
+  padding: 5px;
+  box-shadow: 0px 2px 5px gray;
+}
+
+#datos-academicos ul li {
+  display: block;
+  font-size: 20px;
+  margin-top: 15px;
+}
+#datos-academicos ul li h3 {
+  text-decoration: underline;
+}
+#foto-adro {
+  width: 100%;
+  height: auto;
+}
+#foto-uba {
+  width: 100%;
+  height: auto;
+}
+
+#experiencia-profecional {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+    padding: 10px;
+    box-shadow: 2px 2px 7px rgb(187, 198, 214);
+    border-radius: 10px;
+}
+#experiencia-profecional h2 {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, rgb(0, 49, 148), rgb(0, 179, 255));
+  margin-top: 0;
+  margin: 60px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: aliceblue;
+  padding: 5px;
+  box-shadow: 0px 2px 5px gray;
+}
+#experiencia-profecional ul li {
+  display: block;
+  font-size: 20px;
+  margin-top: 15px;
+}
+#foto-b-n {
+  width: 100%;
+  height: auto;
+}
+#foto-walmart {
+  width: 100%;
+  height: auto;
+}
+
+#capacitaciones {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  margin-top: 40px;
+  padding: 10px;
+  box-shadow: 2px 2px 7px rgb(187, 198, 214);
+  border-radius: 10px;
+}
+#capacitaciones h2 {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, rgb(0, 49, 148), rgb(0, 179, 255));
+  margin-top: 0;
+  margin: 60px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: aliceblue;
+  padding: 5px;
+  box-shadow: 0px 2px 5px gray;
+}
+#capacitaciones ul li {
+  display: block;
+  font-size: 20px;
+  margin-top: 15px;
+}
+#foto-curso1 {
+  width: 100%;
+  height: auto;
+}
+#foto-curso2 {
+  width: 100%;
+  height: auto;
+}
+
+#mas-sobre-mi {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  margin-top: 40px;
+  padding: 10px;
+}
+#mas-sobre-mi h2 {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, rgb(0, 49, 148), rgb(0, 179, 255));
+  margin-top: 0;
+  margin: 60px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: aliceblue;
+  padding: 5px;
+  box-shadow: 0px 2px 5px gray;
+}
+#mas-sobre-mi p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#hobby {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+#hobby h2 {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, rgb(0, 49, 148), rgb(0, 179, 255));
+  margin-top: 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: aliceblue;
+  padding: 5px;
+  box-shadow: 0px 2px 5px gray;
+}
+#hobby ul li {
+  display: block;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#foto-ejercicio {
+  width: 100%;
+  height: auto;
+}
+#foto-guitarra {
+  width: 100%;
+  height: auto;
+}
+#foto-baile {
+  width: 100%;
+  height: auto;
+}
+
+.pie-pagina {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  background-color: #0a141d;
+}
+.pie-pagina .box {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+}
+.pie-pagina .box h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+}
+.pie-pagina .box .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: 300ms ease;
+}
+.pie-pagina .box .red-social a:hover {
+  color: aqua;
+}
+
+.pie-pagina .copi{
+  width: 100%;
+  background-color: #0a1a2a;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+
+}
+.pie-pagina .copi small {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    background-color: #0a141d;
+  }
+
+}
