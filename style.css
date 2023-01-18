@@ -70,7 +70,7 @@ header {
 @media screen and (max-width:700px) {
   .menu-toggle {
     display: block;
-  }
+}
 
   #menu {
     background: rgb(15, 7, 6);
@@ -105,7 +105,6 @@ header {
 #datos-personales {
     width: 100%;
     height: auto;
-    max-width: 1200px;
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
     margin-top: 20px;
@@ -113,6 +112,7 @@ header {
     box-shadow: 2px 2px 7px rgb(187, 198, 214);
     border-radius: 10px;
 }
+
 
 #datos-personales h2 {
   width: 100%;
@@ -131,12 +131,12 @@ header {
   display: block;
   margin-top: 15px;
   font-size: 20px;
+  text-align: center;
 }
 
 #datos-academicos {
   width: 100%;
   height: auto;
-  max-width: 1200px;
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
   margin-top: 40px;
@@ -162,6 +162,8 @@ header {
   display: block;
   font-size: 20px;
   margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 #datos-academicos ul li h3 {
   text-decoration: underline;
@@ -169,22 +171,44 @@ header {
 .fotos-adro {
   height: auto;
   border: 5px solid black;
+  max-width: 800px;
+  margin-left: 250px;
 }
 .fotos-uba {
   height: auto;
   border: 5px solid black;
+  max-width: 800px;
+  margin-left: 250px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:1200px) {
+  .fotos-adro {
+    height: auto;
+    border: 5px solid black;
+    max-width: 1200px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .fotos-uba {
+    height: auto;
+    border: 5px solid black;
+    max-width: 1200px;
+    margin-left: 0;
+  }
 }
 
 #experiencia-profecional {
-    width: 100%;
-    height: auto;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-    margin-top: 40px;
-    padding: 10px;
-    box-shadow: 2px 2px 7px rgb(187, 198, 214);
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  margin-top: 40px;
+  padding: 10px;
+  box-shadow: 2px 2px 7px rgb(187, 198, 214);
+  border-radius: 10px;
 }
 #experiencia-profecional h2 {
   width: 100%;
@@ -198,24 +222,84 @@ header {
   padding: 5px;
   box-shadow: 0px 2px 5px gray;
 }
-#experiencia-profecional ul li {
+.e-p h3 {
   display: block;
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
 }
-#foto-b-n {
+.e-p p {
+  display: block;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.slider_container {
   width: 100%;
-  height: auto;
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+  border: 5px solid black;
+  overflow: hidden;
 }
-#foto-walmart {
+.slider{
+  width: 300%;
+  height: 400px;
+  display: flex;
+  margin-left: -100%; 
+}
+.foto-b-n {
   width: 100%;
-  height: auto;
 }
+.foto-banco {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.slider__btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  top: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider__btn:hover {
+  background: #fff;
+}
+
+.boton-izq {
+  left: 10px;
+}
+
+.boton-der {
+  right: 10px;
+}
+
+.fotos-w {
+  width: 100%;
+}
+.fotos-walmart {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+
 
 #capacitaciones {
   width: 100%;
   height: auto;
-  max-width: 1200px;
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
   margin-top: 40px;
@@ -239,20 +323,23 @@ header {
   display: block;
   font-size: 20px;
   margin-top: 15px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 #foto-curso1 {
   width: 100%;
   height: auto;
+  max-width: 800px;
 }
 #foto-curso2 {
   width: 100%;
   height: auto;
+  max-width: 800px;
 }
 
 #mas-sobre-mi {
   width: 100%;
   height: auto;
-  max-width: 1200px;
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
   margin-top: 40px;
@@ -275,14 +362,6 @@ header {
   margin-bottom: 30px;
 }
 
-#hobby {
-  width: 100%;
-  height: auto;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: rgb(255, 255, 255);
-  padding: 10px;
-}
 #hobby h2 {
   width: 100%;
   height: auto;
@@ -290,17 +369,22 @@ header {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
-  color: black;
+  color: #fff;
+  background: linear-gradient(to right, rgb(128, 0, 0), rgb(255, 0, 85));
   padding: 5px;
   box-shadow: 0px 2px 5px rgb(211, 35, 35);
 }
 .hobbys {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 60px;
+  padding: 10px;
   font-size: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
+  background-color: rgb(255, 255, 255);
+
+}
+.hobbys h3 {
+  width: 100%;
+  height: auto;
 }
 #foto-ejercicio {
   border: 3px solid black;
@@ -317,6 +401,29 @@ header {
   width: 100%;
   height: auto;
 }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 700px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}  
 
 .pie-pagina {
   width: 100%;
@@ -368,7 +475,7 @@ header {
   font-size: 15px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .pie-pagina {
     width: 100%;
     height: auto;
