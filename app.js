@@ -12,8 +12,8 @@ var myIndex = 0;
 carousel();
 
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("fotos-adro");
+  let i;
+  let x = document.getElementsByClassName("fotos-adro");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
@@ -23,12 +23,12 @@ function carousel() {
   setTimeout(carousel, 4000);
 }
 
-var index = 0;
+let index = 0;
 carrusel();
 
 function carrusel() {
-  var e;
-  var f = document.getElementsByClassName("fotos-uba");
+  let e;
+  let f = document.getElementsByClassName("fotos-uba");
   for (e = 0; e < f.length; e++) {
     f[e].style.display = "none";  
   }
