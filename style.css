@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #0a141d;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lora', serif;
 }
 
 
@@ -64,7 +68,7 @@ header {
 }
 
 .show {
-  height: 320px !important;
+  height: 309px !important;
 }
 
 @media screen and (max-width:700px) {
@@ -125,6 +129,7 @@ header {
   color: aliceblue;
   padding: 5px;
   box-shadow: 0px 2px 5px gray;
+  font-family: 'Oswald', sans-serif;
 }
 
 #datos-personales ul li {
@@ -156,9 +161,10 @@ header {
   color: aliceblue;
   padding: 5px;
   box-shadow: 0px 2px 5px gray;
+  font-family: 'Oswald', sans-serif;
 }
 
-#datos-academicos ul li {
+#datos-academicos ul li span {
   display: block;
   font-size: 20px;
   margin-top: 15px;
@@ -167,12 +173,22 @@ header {
 }
 #datos-academicos ul li h3 {
   text-decoration: underline;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
 }
 .fotos-adro {
   height: auto;
   border: 5px solid black;
   max-width: 800px;
   margin-left: 250px;
+}
+
+.fotos-adro img {
+  width: 100%;
+  height: 100%;
 }
 .fotos-uba {
   height: auto;
@@ -200,7 +216,7 @@ header {
   }
 }
 
-#experiencia-profecional {
+.experiencia-profecional {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -210,7 +226,7 @@ header {
   box-shadow: 2px 2px 7px rgb(187, 198, 214);
   border-radius: 10px;
 }
-#experiencia-profecional h2 {
+.experiencia-profecional h2 {
   width: 100%;
   height: auto;
   background: linear-gradient(to right, rgb(0, 49, 148), rgb(0, 179, 255));
@@ -221,7 +237,14 @@ header {
   color: aliceblue;
   padding: 5px;
   box-shadow: 0px 2px 5px gray;
+  font-family: 'Oswald', sans-serif;
 }
+
+.experiencia-profecional h3 {
+  font-family: 'Aboreto', cursive;
+}
+
+
 .e-p h3 {
   display: block;
   font-size: 30px;
@@ -318,10 +341,11 @@ header {
   color: aliceblue;
   padding: 5px;
   box-shadow: 0px 2px 5px gray;
+  font-family: 'Oswald', sans-serif;
 }
 #capacitaciones ul li {
   display: block;
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 15px;
   text-align: center;
   margin-bottom: 15px;
@@ -356,6 +380,7 @@ header {
   color: aliceblue;
   padding: 5px;
   box-shadow: 0px 2px 5px gray;
+  font-family: 'Oswald', sans-serif;
 }
 #mas-sobre-mi p {
   margin-top: 30px;
@@ -373,6 +398,7 @@ header {
   background: linear-gradient(to right, rgb(128, 0, 0), rgb(255, 0, 85));
   padding: 5px;
   box-shadow: 0px 2px 5px rgb(211, 35, 35);
+  font-family: 'Josefin Sans', sans-serif;
 }
 .hobbys {
   padding: 10px;
@@ -382,26 +408,20 @@ header {
   background-color: rgb(255, 255, 255);
 
 }
-.hobbys h3 {
-  width: 100%;
-  height: auto;
-}
-#foto-ejercicio {
-  border: 3px solid black;
-  width: 100%;
-  height: auto;
-}
-#foto-guitarra {
-  border: 3px solid black;
-  width: 100%;
-  height: auto;
-}
-#foto-baile {
-  border: 3px solid black;
-  width: 100%;
-  height: auto;
-}
 
+.hobbys img {
+  border: 3px solid black;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px 
+  rgba(0,0,0,0.50);
+
+}
+.hobbys h3 {
+  text-align: center;
+  font-size: 30px;
+}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}

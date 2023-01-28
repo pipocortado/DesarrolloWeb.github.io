@@ -6,6 +6,14 @@ menuToggle.addEventListener('click', e=> {
     menu.classList.toggle("show");
 })
 
+let menuLinks = document.querySelectorAll('#menu a[href^="#"]');
+
+menuLinks.forEach(menuLink => {
+  menuLink.addEventListener("click" , function() {
+    menu.classList.remove("show");
+  })
+})
+
 //Funciones carrusel
 
 var myIndex = 0;

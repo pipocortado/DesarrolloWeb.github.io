@@ -18,7 +18,7 @@
         </div>
         <nav id="menu">
             <ul>
-                <li><a href="#perfil">Perfil</li>
+                <li><a href="#perfil">Perfil</a></li>
                 <li><a href="#escuelas">Escuelas</a></li>
                 <li><a href="#trabajos">Trabajos</a></li>
                 <li><a href="#cursos">Cursos</a></li>
@@ -30,9 +30,7 @@
         </div>
     </header>
 
-    <div id="datos-personales">
-
-    </div>
+    <div id="datos-personales"></div>
 
     <div id="datos-academicos">
         <a name="escuelas"></a>
@@ -43,13 +41,13 @@
                 <li><span>Colegio Nacional de Adrogue.</span></li>
                 <li><span>Orientación: Economía y Administración.</span></li>
                 <div class="fotos-adro">
-                    <img src="https://media.infocielo.com/p/b607b5963f9644883323baa5976e6294/adjuntos/299/imagenes/001/386/0001386922/887x0/smart/colegio-nacional-adrogue-almirante-brown-6.jpeg" alt="colegio nacional de adrogue 1" style="width: 100%;">
+                    <img src="https://media.infocielo.com/p/b607b5963f9644883323baa5976e6294/adjuntos/299/imagenes/001/386/0001386922/887x0/smart/colegio-nacional-adrogue-almirante-brown-6.jpeg" alt="colegio nacional de adrogue 1">
                 </div>
                 <div class="fotos-adro">
-                    <img src="https://www.clarin.com/img/2021/02/18/luWw6q7hE_1256x620__1.jpg" alt="colegio nacional de adrogue 2" style="width: 100%;">
+                    <img src="https://www.clarin.com/img/2021/02/18/luWw6q7hE_1256x620__1.jpg" alt="colegio nacional de adrogue 2">
                 </div>
                 <div class="fotos-adro">
-                    <img src="https://media.eldiariosur.com/p/8260c0ed8d0b1996092ffcad1ca551a0/adjuntos/291/imagenes/000/173/0000173291/f800x450-33666_85112_9jpeg.jpeg" alt="colegio nacional de adrogue 3" style="width: 100%;">
+                    <img src="https://media.eldiariosur.com/p/8260c0ed8d0b1996092ffcad1ca551a0/adjuntos/291/imagenes/000/173/0000173291/f800x450-33666_85112_9jpeg.jpeg" alt="colegio nacional de adrogue 3">
                 </div>
             </ul>
                 <li><h3>Escuela universitaria:</h3></li>
@@ -70,13 +68,13 @@
 
     </div>
 
-    <div id="experiencia-profecional">
+    <div class="experiencia-profecional" id="experiencia-profecional">
         <a name="trabajos"></a>
         <h2>Experiencia profecional</h2>
         <div class="e-p">
             <h3>Banco Nacion</h3>
             <p>Economista.</p>
-            <p>De (xx/xx/xxxx) A (xx/xx/xxxx)</p>
+            <p>De (1/01/2001) A (2/02/2002)</p>
         </div>
         <div class="slider_container">
             <div class="slider" id="slider-banco">
@@ -96,7 +94,7 @@
         <div class="e-p">
             <h3>Walmart</h3>
             <p>Recursos Humanos</p>
-            <p>De (xx/xx/xxxx) A (xx/xx/xxxx)</p>
+            <p>De (3/03/2003) A (4/04/2004)</p>
         </div>
         <div class="slider_container">
             <div class="slider" id="slider-walmart">
@@ -155,10 +153,10 @@
             <div class="box">
                 <h2>OTRAS REDES:</h2>
                 <div class="red-social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"></a>
                 </div>
             </div>
             <div class="copi">
@@ -176,7 +174,7 @@
         .then(res => res.json())
         .then(datos => {
             let author = datos.results;
-            let datosPersonales = "<h2>Datos personales.</h2>";
+            let datosPersonales = "<h2>Datos personales</h2>";
             author.map(function (datos) {
                 datosPersonales += `
                 <div class="d-p">
