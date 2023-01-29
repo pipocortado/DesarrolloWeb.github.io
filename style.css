@@ -180,10 +180,10 @@ header {
   
 }
 .fotos-adro {
-  height: auto;
+  height: 600px;
   border: 5px solid black;
   max-width: 800px;
-  margin-left: 250px;
+  margin: 0 auto;
 }
 
 .fotos-adro img {
@@ -191,16 +191,20 @@ header {
   height: 100%;
 }
 .fotos-uba {
-  height: auto;
+  height: 600px;
   border: 5px solid black;
   max-width: 800px;
-  margin-left: 250px;
+  margin: 0 auto;
   margin-bottom: 20px;
+}
+.fotos-uba img {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width:1200px) {
   .fotos-adro {
-    height: auto;
+    height: 600px;
     border: 5px solid black;
     max-width: 1200px;
     margin-left: 0;
@@ -209,7 +213,7 @@ header {
 
 @media screen and (max-width:1200px) {
   .fotos-uba {
-    height: auto;
+    height: 600px;
     border: 5px solid black;
     max-width: 1200px;
     margin-left: 0;
@@ -351,14 +355,18 @@ header {
   margin-bottom: 15px;
 }
 #foto-curso1 {
+  display: block;
   width: 100%;
   height: auto;
   max-width: 800px;
+  margin: 0 auto;
 }
 #foto-curso2 {
+  display: block;
   width: 100%;
   height: auto;
   max-width: 800px;
+  margin: 0 auto;
 }
 
 #mas-sobre-mi {
