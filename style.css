@@ -220,6 +220,18 @@ header {
   }
 }
 
+@media screen and (max-width:500px) {
+  .fotos-adro {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .fotos-uba {
+    height: 400px;
+  }
+}
+
 .experiencia-profecional {
   width: 100%;
   height: auto;
