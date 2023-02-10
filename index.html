@@ -8,20 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="#" >CURRICULUM VITAE</a>
+            <img src="logo.png">
         </div>
         <nav id="menu">
             <ul>
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#escuelas">Escuelas</a></li>
-                <li><a href="#trabajos">Trabajos</a></li>
-                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#datos-personales">Perfil</a></li>
+                <li><a href="#datos-academicos">Escuelas</a></li>
+                <li><a href="#experiencia-profecional">Trabajos</a></li>
+                <li><a href="#capacitaciones">Cursos</a></li>
                 <li><a href="#mas-sobre-mi">Sobre mi</a></li>
             </ul>    
         </nav>
@@ -33,7 +33,6 @@
     <div id="datos-personales"></div>
 
     <div id="datos-academicos">
-        <a name="escuelas"></a>
         <h2>Datos Academicos.</h2>
         <ul>
             <li><h3>Escuela secundaria:</h3></li>
@@ -69,7 +68,6 @@
     </div>
 
     <div class="experiencia-profecional" id="experiencia-profecional">
-        <a name="trabajos"></a>
         <h2>Experiencia profecional</h2>
         <div class="e-p">
             <h3>Banco Nacion</h3>
@@ -114,7 +112,6 @@
     </div>
 
     <div id="capacitaciones">
-        <a name="cursos"></a>
         <h2>capacitaciones.</h2>
         <ul>
             <li><h3>Curso de Ingles: Avanzado.</h3></li>
@@ -125,29 +122,56 @@
     </div>
 
     <div id="mas-sobre-mi">
-        <a name="mas-sobre-mi"></a>
         <h2>Mas sobre mi.</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis, metus accumsan finibus accumsan, lacus ex rhoncus neque, quis vulputate enim dui ac purus. In imperdiet sit amet ante id porttitor. Ut molestie ornare semper. Fusce at feugiat risus. Etiam lorem ligula, laoreet ut porttitor sed, condimentum vitae elit. Aliquam eu nisl ac tellus egestas faucibus. Pellentesque laoreet ullamcorper luctus. Maecenas in enim at magna maximus tristique. Pellentesque consectetur ultrices dolor, vel aliquet mi gravida sed. Proin eu viverra odio. Duis pretium turpis in justo aliquam lacinia.</p>
         <p>Sed dictum urna a arcu interdum, a pulvinar tortor suscipit. Nam id volutpat massa, facilisis vulputate mauris. Nunc porttitor, augue eget cursus vestibulum, dolor sem rhoncus nisi, eget facilisis nisl lorem eu tellus. Integer vel elit maximus, iaculis nunc eget, congue felis. Proin placerat elementum justo, vitae pretium odio lobortis quis. Maecenas elementum ultricies arcu, ac sollicitudin metus eleifend quis. Vestibulum luctus ultricies placerat. Nunc facilisis velit sit amet purus condimentum porttitor. Nullam et tellus semper, pulvinar metus vel, vehicula nulla. Sed id gravida turpis, id lobortis nisi.</p>
         <p>Duis sit amet lectus ut urna luctus iaculis. Proin molestie et massa eget mattis. Aliquam tincidunt nisl ut sem ullamcorper, egestas varius velit convallis. Mauris quis scelerisque sapien, a convallis orci. Maecenas hendrerit sagittis metus at volutpat. Pellentesque interdum magna vel ligula vulputate, sit amet accumsan elit pharetra. Proin sagittis et tellus eget feugiat. Vestibulum ornare nec metus quis sagittis. Suspendisse non malesuada ipsum, non tincidunt elit.</p>
     </div>
 
-    <div id="hobby">
+    <div class="hobbyh2">
         <h2>Hobbys</h2>
-        <div class="col-4 hobbys">
-            <img src="https://img.freepik.com/foto-gratis/hombre-mujer-haciendo-ejercicio-juntos_23-2147755529.jpg" alt="imagen de alguien haciendo ejercicio" style="width: 100%;" id="foto-ejercicio">
-            <h3>Hacer ejercicio.</h3>
+    </div>
+    <div class="hobby" id="hobby">
+        <div class="col-4 hobbys" id="img1">
+            <img src="https://img.freepik.com/foto-gratis/hombre-mujer-haciendo-ejercicio-juntos_23-2147755529.jpg" alt="imagen de alguien haciendo ejercicio">
+            <div class="capa">
+                <h3>Hacer ejercicio.</h3>
+            </div>
         </div>
-        <div class="col-4 hobbys">
-            <img src="https://musicopolix.com/blog/wp-content/uploads/2022/02/que-es-mas-facil-guitarra-clasica-o-acustica-portada.jpg" alt="imagen de guitarra" style="width: 100%;" id="foto-guitarra">
-            <h3>Tocar guitarra.</h3>
+        <div class="col-4 hobbys" id="img2">
+            <img src="https://musicopolix.com/blog/wp-content/uploads/2022/02/que-es-mas-facil-guitarra-clasica-o-acustica-portada.jpg" alt="imagen de guitarra">
+            <div class="capa">
+                <h3>Tocar guitarra.</h3>
+            </div>
         </div>
-        <div class="col-4 hobbys">
-            <img src="https://images.vexels.com/media/users/3/255936/isolated/preview/fb72d8b9820a5c4a5343f1546d9b0b03-gente-bailando-silueta-de-baile.png" alt="foto de alguien bailando" style="width: 100%;" id="foto-baile">
-            <h3>Practicar baile.</h3>
+        <div class="col-4 hobbys" id="img3">
+            <img src="https://images.vexels.com/media/users/3/255936/isolated/preview/fb72d8b9820a5c4a5343f1546d9b0b03-gente-bailando-silueta-de-baile.png" alt="foto de alguien bailando">
+            <div class="capa">
+                <h3>Practicar baile.</h3>
+            </div>
         </div>
     </div>
 
+    <div class="modal">
+        <div class="modal-conteiner">
+            <img src="https://img.freepik.com/foto-gratis/hombre-mujer-haciendo-ejercicio-juntos_23-2147755529.jpg">
+            <i class="fa-solid fa-circle-xmark" id="x"></i>
+        </div>
+    </div>
+    <div class="modal2">
+        <div class="modal-conteiner">
+            <img src="https://musicopolix.com/blog/wp-content/uploads/2022/02/que-es-mas-facil-guitarra-clasica-o-acustica-portada.jpg">
+            <i class="fa-solid fa-circle-xmark" id="x2"></i>
+        </div>
+    </div>
+    <div class="modal3">
+        <div class="modal-conteiner">
+            <img src="https://images.vexels.com/media/users/3/255936/isolated/preview/fb72d8b9820a5c4a5343f1546d9b0b03-gente-bailando-silueta-de-baile.png">
+            <i class="fa-solid fa-circle-xmark" id="x3"></i>
+        </div>
+    </div>
+
+    
     <footer>
         <div class="pie-pagina">
             <div class="box">
@@ -168,33 +192,6 @@
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/b48c129cbc.js" crossorigin="anonymous"></script>
     
-    
-   <!-- codigo del perfil aleatorio --> 
-    <script>fetch("https://randomuser.me/api/")
-        .then(res => res.json())
-        .then(datos => {
-            let author = datos.results;
-            let datosPersonales = "<h2>Datos personales</h2>";
-            author.map(function (datos) {
-                datosPersonales += `
-                <div class="d-p">
-                <a name="perfil"></a>
-                    <ul>
-                        <li><center><img src="${datos.picture.large}"></center></li>
-                        <li><h3>Nombre: ${datos.name.first}</h3></li>
-                        <li><h3>Apellido: ${datos.name.last}</h3></li>
-                        <li><h3>Numero: ${datos.cell}</h3></li>
-                        <li><h3>Fecha de nacimiento: ${datos.dob.date}</h3></li>
-                        <li><h3>Edad: ${datos.dob.age}</h3></li>
-                        <li><h3>Correo: ${datos.email}</h3></li>
-                        <li><h3>Ciudad: ${datos.location.city}</h3></li>
-                        <li><h3>Lugar de nacimiento: ${datos.location.country}</h3></li>
-                        <li><h3>Codigo postal: ${datos.location.postcode}</h3></li>
-                    </ul>
-                </div> `;
-            });
-            document.getElementById('datos-personales').innerHTML = datosPersonales;
 
-        });</script>
 </body>
 </html>
