@@ -143,7 +143,7 @@ header {
   margin-top: 15px;
   font-size: 20px;
   text-align: center;
-  text-decoration: none;
+  list-style-type: none;
 }
 
 #datos-academicos {
@@ -175,14 +175,15 @@ header {
   margin-top: 15px;
   margin-bottom: 15px;
   text-align: center;
+  list-style-type: none;
 }
 #datos-academicos ul li h3 {
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 25px;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
-  
+  list-style-type: none;
 }
 .fotos-adro {
   height: 500px;
