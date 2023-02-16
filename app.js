@@ -191,7 +191,7 @@ fetch("https://randomuser.me/api/")
           datosPersonales += `
             <div class="d-p">
                 <ul>
-                    <li><center><img src="${datos.picture.large}"></center></li>
+                    <li><img src="${datos.picture.large}"></li>
                     <li><h3>Nombre: ${datos.name.first}</h3></li>
                     <li><h3>Apellido: ${datos.name.last}</h3></li>
                     <li><h3>Numero: ${datos.cell}</h3></li>
