@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -22,11 +23,11 @@
         </div>
         <nav id="menu">
             <ul>
-                <li><a href="#datos-personales">Perfil</a></li>
-                <li><a href="#datos-academicos">Escuelas</a></li>
-                <li><a href="#experiencia-profecional">Trabajos</a></li>
-                <li><a href="#capacitaciones">Cursos</a></li>
-                <li><a href="#mas-sobre-mi">Sobre mi</a></li>
+                <li><i class="fa-solid fa-user"></i><a href="#datos-personales">Perfil</a></li>
+                <li><i class="fa-solid fa-school"></i><a href="#datos-academicos">Escuelas</a></li>
+                <li><i class="fa-solid fa-briefcase"></i><a href="#experiencia-profecional">Trabajos</a></li>
+                <li><i class="fa-solid fa-building-flag"></i><a href="#capacitaciones">Cursos</a></li>
+                <li><i class="fa-solid fa-circle-info"></i><a href="#mas-sobre-mi">Sobre mi</a></li>
             </ul>    
         </nav>
         <div class="menu-toggle">
@@ -34,9 +35,9 @@
         </div>
     </header>
 
-    <div id="datos-personales"></div>
+    <div class="datos-personales" id="datos-personales"></div>
 
-    <div id="datos-academicos">
+    <div class="datos-academicos" id="datos-academicos">
         <h2>Datos Academicos.</h2>
         <ul>
             <li><h3>Escuela secundaria:</h3></li>
@@ -114,18 +115,29 @@
             <div class="slider__btn boton-izq" id="boton-izq-w">&#60;</div>
         </div>
     </div>
-
-    <div id="capacitaciones">
-        <h2>capacitaciones.</h2>
-        <ul>
-            <li><h3>Curso de Ingles: Avanzado.</h3></li>
-            <img src="https://www.academiadatec.com/img/w683_h456_c0-0-683-456/leer-covid.jpg" alt="foto aprendiendo Ingles" id="foto-curso1">
-            <li><h3>Curso de Programacion</h3></li>
-            <img src="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg" alt="foto de Programacion" id="foto-curso2">
-        </ul>
+    
+    <a name="capacitaciones"></a>
+    <div class="capacitacionesh2">
+        <h2>capacitaciones</h2>
+    </div>
+    <div class="capacitaciones">
+        <section class="capacitaciones__conteiner">
+            <div class="capacitaciones__conteiner--seccion">
+                <h3>Curso Contabilidad - Tec. En Gestión Contable.</h3>
+                <img src="https://www.hipolitoyrigoyen.gob.ar/sites/default/files/styles/imagen_destacada/public/contaduria.jpg?itok=kLXNAg4J" alt="foto aprendiendo Ingles">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odit nihil quaerat ut fuga impedit delectus nesciunt quas iusto unde distinctio magnam corrupti, nam in quia explicabo enim est nulla.</span>
+            </div>
+        </section>
+        <section class="capacitaciones__conteiner">
+            <div class="capacitaciones__conteiner--seccion" id="capacitaciones__conteiner--seccion2">
+                <h3>Curso Contabilidad - Asistente Contable, Impositivo</h3>
+                <img src="https://cdn.euroinnova.edu.es/img/subidasEditor/dise%C3%B1o%20sin%20t%C3%ADtulo%20-%202021-10-26t071020-1644601764.215" alt="foto de Programacion">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum totam id nobis officiis a nisi asperiores eos quia delectus temporibus minima eius quo provident nulla pariatur, quos dicta similique vel?</span>
+            </div>
+        </section>
     </div>
 
-    <div id="mas-sobre-mi">
+    <div class="mas-sobre-mi" id="mas-sobre-mi">
         <h2>Mas sobre mi.</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis, metus accumsan finibus accumsan, lacus ex rhoncus neque, quis vulputate enim dui ac purus. In imperdiet sit amet ante id porttitor. Ut molestie ornare semper. Fusce at feugiat risus. Etiam lorem ligula, laoreet ut porttitor sed, condimentum vitae elit. Aliquam eu nisl ac tellus egestas faucibus. Pellentesque laoreet ullamcorper luctus. Maecenas in enim at magna maximus tristique. Pellentesque consectetur ultrices dolor, vel aliquet mi gravida sed. Proin eu viverra odio. Duis pretium turpis in justo aliquam lacinia.</p>
         <p>Sed dictum urna a arcu interdum, a pulvinar tortor suscipit. Nam id volutpat massa, facilisis vulputate mauris. Nunc porttitor, augue eget cursus vestibulum, dolor sem rhoncus nisi, eget facilisis nisl lorem eu tellus. Integer vel elit maximus, iaculis nunc eget, congue felis. Proin placerat elementum justo, vitae pretium odio lobortis quis. Maecenas elementum ultricies arcu, ac sollicitudin metus eleifend quis. Vestibulum luctus ultricies placerat. Nunc facilisis velit sit amet purus condimentum porttitor. Nullam et tellus semper, pulvinar metus vel, vehicula nulla. Sed id gravida turpis, id lobortis nisi.</p>

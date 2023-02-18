@@ -49,6 +49,10 @@ header {
 #menu {
   margin-left: auto;
 }
+#menu i {
+  font-size: 20px;
+  color: lightblue;
+}
 
 .menu-toggle i {
   cursor: pointer;
@@ -69,15 +73,17 @@ header {
   transition: .2s;
 }
 
-#menu ul li a:hover {
+#menu ul li:hover {
+  transition: .5s;
   background: #f3f3;
+  border-radius: 6px;
 }
 
 .show {
   height: 309px !important;
 }
 
-#datos-personales {
+.datos-personales {
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -87,7 +93,7 @@ header {
 }
 
 
-#datos-personales h2 {
+.datos-personales h2 {
   width: 100%;
   height: auto;
   background: linear-gradient(to right, rgb(0, 49, 148), rgb(0, 179, 255));
@@ -101,9 +107,11 @@ header {
   font-family: 'Oswald', sans-serif;
 }
 
-#datos-personales img {
+.datos-personales img {
   height: 250px;
   width: 250px;
+  margin-bottom: 30px;
+  object-fit: cover;
   border-radius: 50%;
   border: #000 solid 5px;
   box-shadow: 0 15px 30px
@@ -111,7 +119,7 @@ header {
 
 }
 
-#datos-personales ul li {
+.datos-personales ul li {
   display: block;
   margin-top: 15px;
   font-size: 20px;
@@ -119,7 +127,7 @@ header {
   list-style-type: none;
 }
 
-#datos-academicos {
+.datos-academicos {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -128,7 +136,7 @@ header {
   color: #fff;
 }
 
-#datos-academicos h2 {
+.datos-academicos h2 {
   width: 100%;
   height: auto;
   background: linear-gradient(to right, rgb(0, 49, 148), rgb(0, 179, 255));
@@ -142,7 +150,7 @@ header {
   font-family: 'Oswald', sans-serif;
 }
 
-#datos-academicos ul li span {
+.datos-academicos ul li span {
   display: block;
   font-size: 20px;
   margin-top: 15px;
@@ -150,7 +158,7 @@ header {
   text-align: center;
   list-style-type: none;
 }
-#datos-academicos ul li h3 {
+.datos-academicos ul li h3 {
   text-decoration: underline;
   font-size: 25px;
   text-align: center;
@@ -162,7 +170,7 @@ header {
   height: 500px;
   border: 5px solid black;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .fotos-adro img {
@@ -173,7 +181,7 @@ header {
   height: 500px;
   border: 5px solid black;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 40px auto;
   margin-bottom: 20px;
 }
 .fotos-uba img {
@@ -225,7 +233,7 @@ header {
 .slider_container {
   width: 100%;
   max-width: 600px;
-  margin: auto;
+  margin: 40px auto 50px;
   position: relative;
   border: 5px solid black;
   overflow: hidden;
@@ -282,19 +290,19 @@ header {
   object-fit: cover;
 }
 
-#capacitaciones {
+.capacitaciones {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  height: auto;
-  margin: 0 auto; 
-  margin-top: 40px;
+  height: 700px;
+  margin: 0 auto;  
   padding: 10px;
   color: #fff;
 }
-#capacitaciones h2 {
+.capacitacionesh2 {
   width: 100%;
   height: auto;
   background: linear-gradient(to right, rgb(0, 49, 148), rgb(0, 179, 255));
-  margin-top: 0;
   margin: 60px 0;
   text-align: center;
   text-transform: uppercase;
@@ -303,36 +311,37 @@ header {
   box-shadow: 0px 5px 15px rgb(28, 5, 31);
   font-family: 'Oswald', sans-serif;
 }
-#capacitaciones ul li {
-  display: block;
+.capacitaciones__conteiner {
+  width: 500px;
+  height: 350px;
   font-size: 25px;
-  margin-top: 15px;
+}
+.capacitaciones__conteiner--seccion {
+  margin: 40px auto;
+}
+.capacitaciones__conteiner h3 {
   text-align: center;
+  margin-bottom: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-bottom: 20px;
+}
+.capacitaciones__conteiner img {
+  width: 100%;
+  height: 400px;
   margin-bottom: 15px;
-}
-#foto-curso1 {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  margin: 0 auto;
-}
-#foto-curso2 {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  margin: 0 auto;
+  border: 5px solid #000;
+  border-radius: 10px;
 }
 
-#mas-sobre-mi {
+
+.mas-sobre-mi {
   width: 100%;
   height: auto;
   margin: 0 auto;
   margin-top: 40px;
   padding: 10px;
 }
-#mas-sobre-mi h2 {
+.mas-sobre-mi h2 {
   width: 100%;
   height: auto;
   background: linear-gradient(to right, rgb(0, 49, 148), rgb(0, 179, 255));
@@ -345,7 +354,7 @@ header {
   box-shadow: 0px 5px 15px rgb(28, 5, 31);
   font-family: 'Oswald', sans-serif;
 }
-#mas-sobre-mi p {
+.mas-sobre-mi p {
   color: #fff;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -574,6 +583,16 @@ header {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .capacitaciones{
+    display: block;
+    height: 1500px;
+  }
+  .capacitaciones__conteiner--seccion2{
+    margin-top: 400px;
+  }
+}
+
 @media screen and (max-width:700px) {
   .menu-toggle {
     display: block;
@@ -589,6 +608,9 @@ header {
     border: 1px solid #fff;
     overflow: hidden;
     transition: .3s ease-out;
+  }
+  #menu i {
+    display: none;
   }
 
   #menu ul li {
@@ -626,6 +648,19 @@ header {
   }
   .fotos-uba {
     height: 350px;
+  }
+  .capacitaciones{
+    height: auto;
+  }
+  .capacitaciones__conteiner{
+    width: auto;
+    height: auto;
+  }
+  .capacitaciones__conteiner--seccion{
+    padding: 15px;
+  }
+  .capacitaciones__conteiner img {
+    height: 300px;
   }
   .hobby .hobbys .capa h3 {
     top: 0;
