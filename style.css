@@ -40,10 +40,13 @@ header {
 }
 
 .logo img {
-  width: 70px;
-  height: 55px;  
-  border-radius: 50%;
-  margin-left: 30px;
+  width: 40px;
+  height: 50px;  
+  border-radius: 6px;
+  margin-left: 50px;
+  object-fit: cover;
+  filter: invert(100%) brightness(.8);
+  margin-top: 5px;
 }
 
 #menu {
@@ -102,36 +105,53 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: aliceblue;
+  letter-spacing: 5px;
   padding: 5px;
   box-shadow: 0px 5px 15px rgb(28, 5, 31);
   font-family: 'Oswald', sans-serif;
 }
 
 .datos-personales img {
+  display: block;
   height: 250px;
   width: 250px;
+  margin: 0 auto;
   margin-bottom: 30px;
   object-fit: cover;
   border-radius: 50%;
   border: #000 solid 5px;
   box-shadow: 0 15px 30px
   rgb(14, 5, 24);
-
+  transition: all .5s ease-in-out;
+}
+.datos-personales img:hover {
+  transform: scale(1.4);
+  transition: all .5s ease-in-out;
 }
 
-.datos-personales ul li {
+.d-p__conteiner {
   display: block;
-  margin-top: 15px;
-  font-size: 20px;
+  width: 600px;
+  height: 500px;
+  background: linear-gradient(to top, #151E3D, #281E5D);
+  padding: 10px;
+  margin: 15px auto;
   text-align: center;
+  border: 3px solid #111;
+  border-radius: 6px;
+}
+
+.d-p__conteiner ul li {
+  font-size: 20px;
   list-style-type: none;
+  margin: 15px 15px 20px;
 }
 
 .datos-academicos {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 10px;
   color: #fff;
 }
@@ -141,42 +161,55 @@ header {
   height: auto;
   background: linear-gradient(to right, rgb(0, 49, 148), rgb(0, 179, 255));
   margin-top: 0;
-  margin: 60px 0;
+  margin: 40px 0;
   text-align: center;
   text-transform: uppercase;
   color: aliceblue;
+  letter-spacing: 5px;
   padding: 5px;
   box-shadow: 0px 5px 15px rgb(28, 5, 31);
   font-family: 'Oswald', sans-serif;
 }
 
-.datos-academicos ul li span {
+.datos-academicos__conteiner {
   display: block;
-  font-size: 20px;
+  width: 500px;
+  height: auto;
+  background-image: url(https://img.freepik.com/foto-gratis/pared-estudio-degradado-amarillo-oro-lujo-abstracto-bien-uso-como-fondo-diseno-banner-presentacion-producto_1258-71779.jpg);
+  padding: 10px;
+  margin: 15px auto;
+  text-align: center;
+  border: 3px solid #111;
+  border-radius: 30px;
+}
+.datos-academicos h3 {
+  font-size: 30px;
+  color:  #0a141d;
+  text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
-  text-align: center;
   list-style-type: none;
 }
-.datos-academicos ul li h3 {
-  text-decoration: underline;
+.datos-academicos span {
+  display: block;
   font-size: 25px;
-  text-align: center;
+  color: #0a1a2a;
   margin-top: 15px;
   margin-bottom: 15px;
-  list-style-type: none;
+  text-align: center;
 }
 .fotos-adro {
   height: 500px;
   border: 5px solid black;
   max-width: 800px;
-  margin: 40px auto;
+  margin: 40px auto 90px;
 }
 
 .fotos-adro img {
   width: 100%;
   height: 100%;
 }
+
 .fotos-uba {
   height: 500px;
   border: 5px solid black;
@@ -206,6 +239,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: aliceblue;
+  letter-spacing: 5px;
   padding: 5px;
   box-shadow: 0px 5px 15px rgb(28, 5, 31);
   font-family: 'Oswald', sans-serif;
@@ -215,13 +249,27 @@ header {
   font-family: 'Aboreto', cursive;
 }
 
+.e-p {
+  width: 500px;
+  height: auto;
+  background-image: url(https://media.istockphoto.com/id/480758541/es/foto/iluminado-pared-de-ladrillos.jpg?s=612x612&w=0&k=20&c=4Sn077tTcM-iHlEt453EVgJuuibhZTjvbquOTYEQUHo=);
+  filter: brightness(.7);
+  padding: 10px;
+  margin: 15px auto;
+  text-align: center;
+  border: 3px solid #111;
+  border-radius: 30px;
+}
+
 
 .e-p h3 {
   display: block;
   font-size: 30px;
+  font-weight: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
   text-align: center;
+  letter-spacing: 5px;
 }
 .e-p p {
   display: block;
@@ -237,6 +285,7 @@ header {
   position: relative;
   border: 5px solid black;
   overflow: hidden;
+  margin-bottom: 150px ;
 }
 .slider{
   width: 300%;
@@ -303,10 +352,11 @@ header {
   width: 100%;
   height: auto;
   background: linear-gradient(to right, rgb(0, 49, 148), rgb(0, 179, 255));
-  margin: 60px 0;
+  margin: 10px 0 60px;
   text-align: center;
   text-transform: uppercase;
   color: aliceblue;
+  letter-spacing: 5px;
   padding: 5px;
   box-shadow: 0px 5px 15px rgb(28, 5, 31);
   font-family: 'Oswald', sans-serif;
@@ -320,10 +370,12 @@ header {
   margin: 40px auto;
 }
 .capacitaciones__conteiner h3 {
+  background: #0af;
+  border-radius: 20px;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 40px;
   font-family: 'Josefin Sans', sans-serif;
-  padding-bottom: 20px;
+  padding: 10px;
 }
 .capacitaciones__conteiner img {
   width: 100%;
@@ -350,6 +402,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: aliceblue;
+  letter-spacing: 5px;
   padding: 5px;
   box-shadow: 0px 5px 15px rgb(28, 5, 31);
   font-family: 'Oswald', sans-serif;
@@ -588,8 +641,21 @@ header {
     display: block;
     height: 1500px;
   }
+  .capacitaciones{
+    height: auto;
+  }
+  .capacitaciones__conteiner{
+    width: auto;
+    height: auto;
+  }
+  .capacitaciones__conteiner--seccion{
+    padding: 15px;
+  }
   .capacitaciones__conteiner--seccion2{
     margin-top: 400px;
+  }
+  .capacitaciones__conteiner img {
+    height: auto;
   }
 }
 
@@ -628,6 +694,21 @@ header {
   #menu ul li a:hover {
     background: #f3f3;
   }
+  .d-p__conteiner {
+    width: auto;
+    height: auto;
+  }
+  .datos-academicos__conteiner {
+    width: auto;
+    height: auto;
+  }
+  .e-p {
+    width: auto;
+    height: auto;
+  }
+  .mas-sobre-mi p {
+    padding: 10px;
+  }
   .hobbys {
     height: auto;
     margin: 0 auto;
@@ -648,19 +729,6 @@ header {
   }
   .fotos-uba {
     height: 350px;
-  }
-  .capacitaciones{
-    height: auto;
-  }
-  .capacitaciones__conteiner{
-    width: auto;
-    height: auto;
-  }
-  .capacitaciones__conteiner--seccion{
-    padding: 15px;
-  }
-  .capacitaciones__conteiner img {
-    height: 300px;
   }
   .hobby .hobbys .capa h3 {
     top: 0;

@@ -27,7 +27,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);
+  setTimeout(carousel, 2000);
 }
 
 let index = 0;
@@ -42,7 +42,7 @@ function carrusel() {
   index++;
   if (index > f.length) {index = 1}    
   f[index-1].style.display = "block";  
-  setTimeout(carrusel, 4000);    
+  setTimeout(carrusel, 2000);    
 }
 
 //Funciones Slider.
@@ -190,18 +190,20 @@ fetch("https://randomuser.me/api/")
         author.map(function (datos) {
           datosPersonales += `
             <div class="d-p">
-                <ul>
-                    <li><img src="${datos.picture.large}"></li>
-                    <li><h3>Nombre: ${datos.name.first}</h3></li>
-                    <li><h3>Apellido: ${datos.name.last}</h3></li>
-                    <li><h3>Numero: ${datos.cell}</h3></li>
-                    <li><h3>Fecha de nacimiento: ${datos.dob.date}</h3></li>
-                    <li><h3>Edad: ${datos.dob.age}</h3></li>
-                    <li><h3>Correo: ${datos.email}</h3></li>
-                    <li><h3>Ciudad: ${datos.location.city}</h3></li>
-                    <li><h3>Lugar de nacimiento: ${datos.location.country}</h3></li>
-                    <li><h3>Codigo postal: ${datos.location.postcode}</h3></li>
-                </ul>
+                  <img src="${datos.picture.large}">
+                  <div class="d-p__conteiner">
+                    <ul>
+                      <li><h3>Nombre: ${datos.name.first}</h3></li>
+                      <li><h3>Apellido: ${datos.name.last}</h3></li>
+                      <li><h3>Numero: ${datos.cell}</h3></li>
+                      <li><h3>Fecha de nacimiento: ${datos.dob.date}</h3></li>
+                      <li><h3>Edad: ${datos.dob.age}</h3></li>
+                      <li><h3>Correo: ${datos.email}</h3></li>
+                      <li><h3>Ciudad: ${datos.location.city}</h3></li>
+                      <li><h3>Lugar de nacimiento: ${datos.location.country}</h3></li>
+                      <li><h3>Codigo postal: ${datos.location.postcode}</h3></li>
+                    </ul>
+                  </div>
             </div> `;
         });
         document.getElementById('datos-personales').innerHTML = datosPersonales;
