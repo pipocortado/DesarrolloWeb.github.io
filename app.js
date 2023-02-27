@@ -15,7 +15,7 @@ menuLinks.forEach(menuLink => {
 
 //Funciones carrusel Automatico
 
-var myIndex = 0;
+let myIndex = 0;
 carousel();
 
 function carousel() {

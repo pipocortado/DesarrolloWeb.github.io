@@ -47,6 +47,42 @@ header {
   object-fit: cover;
   filter: invert(100%) brightness(.8);
   margin-top: 5px;
+  animation: rotar 2s ease-out backwards;
+  animation-delay: 1s;
+}
+
+@keyframes rotar {
+  0% {transform: rotate3d(0);}
+
+  100% {transform: rotate3d(0,1,0,360deg);}
+}
+
+.logo__border {
+  position: absolute;
+  z-index: 100;
+  width: 47px;
+  height: 55px;
+  top: 0;
+  margin-top: 3px;
+  margin-left: 46.5px;
+  border: double 3px transparent;
+  border-radius: 7px;
+  animation: borde-animado .4s linear infinite;
+  animation-delay: 3s;
+}
+
+.logo__border:hover {
+  display: none;
+}
+
+@keyframes borde-animado {
+  0% {border-top-color: #f00;}
+  25% {border-right-color: #f00;}
+  50% {border-bottom-color: #f00;}
+  60% {border-top-color: transparent;}
+  75% {border-left-color: #f00;}
+  90% {border-left-color: transparent;}
+  100% {border-top-color: #f00;}
 }
 
 #menu {
@@ -77,9 +113,9 @@ header {
 }
 
 #menu ul li:hover {
-  transition: .5s;
-  background: #f3f3;
-  border-radius: 6px;
+  background: linear-gradient(to top,#f3f1, #f3f3);
+  border-radius: 25px;
+  transition: border-radius 1s linear;
 }
 
 .show {
